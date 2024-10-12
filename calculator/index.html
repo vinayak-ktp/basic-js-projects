@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <input type="text" readonly name="CALCULATOR" id="display">
+        <div id="buttons">
+            <button onclick="correct()" class="number" id="C">C</button>
+            <button onclick="append('+')" class="operator">+</button>
+            <button onclick="append('7')" class="number">7</button>
+            <button onclick="append('8')" class="number">8</button>
+            <button onclick="append('9')" class="number">9</button>
+            <button onclick="append('-')" class="operator">-</button>
+            <button onclick="append('4')" class="number">4</button>
+            <button onclick="append('5')" class="number">5</button>
+            <button onclick="append('6')" class="number">6</button>
+            <button onclick="append('*')" class="operator">*</button>
+            <button onclick="append('1')" class="number">1</button>
+            <button onclick="append('2')" class="number">2</button>
+            <button onclick="append('3')" class="number">3</button>
+            <button onclick="append('/')" class="operator">/</button>
+            <button onclick="append('0')" class="number">0</button>
+            <button onclick="append('.')" class="number">.</button>
+            <button onclick="calculate()" class="number" id="equals">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
